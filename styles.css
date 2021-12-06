@@ -1,0 +1,208 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    font-size: 16px;
+}
+html {
+    font-size: 1rem;
+}
+
+h1{
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 600;
+}
+.center-text{
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+    margin: 1em 0;
+}
+
+b{
+    font-weight: 700;
+}
+
+@media ( max-width: 576px){
+    .container{
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media ( min-width: 576px){
+    .container{
+        max-width: 540px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media ( min-width: 768px){
+    .container{
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media ( min-width: 992px){
+    .container{
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media ( min-width: 1200px){
+    .container{
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media ( min-width: 1400px){
+    .container{
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.content{
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+.contentStyle{
+    color: #1D1128;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.usersTitle{
+    background-color: #6200EE;
+    border-radius: 0.5em;
+    padding: 0.1em 0.3em;
+    font-weight: 800;
+    box-shadow: 2px 2px 5px rgba(175, 175, 175);
+    line-height: 1.8;
+    color: #FFFFFF;
+}
+.divUsers{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customSearch{
+    border-radius: 0.5em;
+    width: 40vw;
+    padding: 2rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px rgba(175, 175, 175);
+    color: #000000;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .customSearch{
+        width: 65vw;
+    }
+}
+@media (max-width: 410px){
+    .customSearch{
+        width: 80vw;
+    }
+}
+
+#users{
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#users > div{
+    margin: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 2px 4px 6px 1px #00000011;
+    background-color: #FFFFFF;
+}
+
+.inputRadio{
+    display: flex;
+    align-items: bottom;
+    flex-direction: column;
+    justify-content: left;
+    margin: 2rem;
+}
+.inputRange{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    margin: 2rem;
+}
+#btn{
+    padding: 1rem 1.5rem;
+    border: 0;
+    background-color: #6200EE;
+    color: #FFFFFF;
+    border-radius: .5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    transition: 0.2s;
+    text-align: center;
+}
+#btn:hover{
+    opacity: 0.9;
+    transition: 0.2s;
+    background-color: #3700B3;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.userName{
+    background-color: #6200EE;
+    padding: .6rem 0 .6rem 1rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.userInfo{
+    padding-left: 1rem;
+    color: #000000;
+    font-weight: 500;
+}
+.pics{
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    border: .2rem solid #3700B3;
+    box-shadow: 0px 2px 6px 1px #433b5c;
+}
+
+.subHeader{
+    position: relative;
+    margin: 6rem 0 1.5rem 0;
+}
+.lineText{ /* USED SO THAT "boundingLines" DOESN'T GO TROUGH THE TEXT*/
+    background-color: white;
+}
+.solidLine{
+    border-top: 1.3px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    z-index: -1;
+}

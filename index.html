@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content center-text">
+            <h1>Random User API</h1>
+            <p>A free, open-source API for generating random user data.</p>
+            <p>Here im utilizing it as a tool to show how <b>fetch</b> can be used to acquire data.</p>
+        </div>
+        <div class="content">
+            <div class="subHeader center-text">
+                <h2><b>Custom Search</b></h2>
+            </div>
+            <div class="customSearch">
+                <form class="contentStyle">
+                    <div class="inputRadio">
+                        <p><b>Choose gender:</b></p>
+                        <div>
+                            <label class="form-check-label" for="both">Both</label><input type="radio" class="form-check-input" name="gender" value="both" checked>
+                            <label class="form-check-label" for="male">- Male</label><input type="radio" class="form-check-input" name="gender" value="male">
+                            <label class="form-check-label" for="female">- Female</label><input type="radio" class="form-check-input" name="gender" value="female">
+                        </div>
+                    </div>
+                    <div class="inputRange">
+                        <p><b>Users shown:</b></p>
+                        <div>
+                            <label for="numberOfUsers">0</label><input type="range" class="form-range" id="range" name="numberOfUsers" min="0" max="50" step="10" value="20"><label for="numberOfUsers">50</label>
+                        </div>
+                        
+                    </div>
+                </form>
+                <div class="contentStyle">
+                    <button type="button" id="btn" onclick="getUser()">SEARCH</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content divUsers">
+        <div class="subHeader">
+            <h1><mark class="lineText"><b class="usersTitle">Users</b></mark></h1>
+            <div class="solidLine"></div>
+        </div>
+        <div id="users"></div>
+    </div>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
